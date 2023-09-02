@@ -1,0 +1,11 @@
+{
+    "name": "umut/google-language-service-interface",
+    "type": "library",
+    "require": {
+        "predis/predis": "^2.2",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    }
+}
