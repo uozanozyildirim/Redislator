@@ -4,12 +4,17 @@ use App\Translator;
 
 class TranslationTest extends TestCase
 {
+
+    public function testSuccess()
+    {
+        $this->assertEquals(true,true);
+    }
+
     public function testInitClass()
     {
         $translator = new Translator();
         $this->assertInstanceOf(Translator::class, $translator);
     }
-
 
     public function testTranslate()
     {
@@ -63,10 +68,29 @@ class TranslationTest extends TestCase
     public function testTranslateWithDefaultLanguage()
     {
         $translator = new Translator();
-        $result = $translator->translate('InvalidKey', 'en');
+        $result = $translator->translate('defaultLanguage', 'en');
 
         $this->assertEquals('Invalid Language', $result);
     }
+
+
+
+    // here is file i should use in my page.
+
+    // version 1
+    // This method should be callable from blade files
+    // method should be callable from backend too.
+
+
+    // version 2
+    // method should be callable from twig and smarty
+
+    // version 3
+    //
+    //
+
+
+
 
 
 
